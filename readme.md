@@ -2,6 +2,17 @@
 
 AI-powered development commands that transform how you think, plan, communicate, and implement code. Each command embodies expert knowledge to elevate your development workflow from idea to deployment.
 
+## 📋 Table of Contents
+
+- [Commands](#-commands)
+- [Complete Development Workflow](#-complete-development-workflow)
+- [Installation & Setup](#-installation--setup)
+- [Key Benefits](#-key-benefits)
+- [Command Structure](#️-command-structure)
+- [Getting Started](#-getting-started)
+- [Contributing](#-contributing)
+- [License](#-license)
+
 ## 🚀 Commands
 
 ### `/commit` - Intelligent Git Commits
@@ -10,7 +21,14 @@ AI-powered development commands that transform how you think, plan, communicate,
 - 🔍 Pre-commit validation (linting, tests, security)
 - 🧠 Context-aware analysis using branch names and project history
 
-### `/bluf` - Bottom Line Up Front  
+### `/blog-post-review` - Blog Post Review & Editing
+**Professional editor focused on clarity and engagement.**
+- 📝 Comprehensive review of spelling, grammar, and readability
+- 🔍 Content structure and flow analysis
+- 💡 Style improvements and engagement suggestions
+- ✏️ Technical accuracy and clarity checks
+
+### `/sum` - Bottom Line Up Front (BLUF)
 **Communication strategist who despises buried leads.**
 - 🎯 Transforms complex information into clear, actionable communication
 - 📋 4 specialized formats (Decision, Status, Analysis, Problem)
@@ -39,6 +57,13 @@ AI-powered development commands that transform how you think, plan, communicate,
 - 📦 Smart task batching for flow state vs. individual validation
 - ⚡ Parallel work coordination with dependency awareness  
 - 📊 Technical debt tracking with automated progress reporting
+
+### `/create-command` - Custom Command Creator
+**Meta-command architect for expanding your toolkit.**
+- 🛠️ Creates new Claude commands with expert personas
+- 📋 Structured command template generation
+- 🎯 Clear argument handling and process definition
+- 📁 Automatic file creation with proper formatting
 
 ## 🔄 Complete Development Workflow
 
@@ -70,7 +95,44 @@ AI-powered development commands that transform how you think, plan, communicate,
 # → "✨ feat(dashboard): add yesterday's work filter for standup prep"
 
 # 6. Update stakeholders
-/bluf "Yesterday's Work Filter deployment: 85% reduction in standup prep time"
+/sum "Yesterday's Work Filter deployment: 85% reduction in standup prep time"
+```
+
+## 🔧 Installation & Setup
+
+### Prerequisites
+- [Claude](https://claude.ai) AI assistant access
+- Git for version control
+- A text editor or IDE
+
+### Quick Start
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/jesse-spevack/claude-commands.git
+   cd claude-commands
+   ```
+
+2. **Integration with Claude:**
+   - Copy command files to your Claude workspace
+   - Commands are markdown files that Claude can interpret
+   - Use commands by typing `/command-name` followed by your input
+
+### Directory Structure
+```
+claude-commands/
+├── blog-post-review.md   # Blog post editing command
+├── brainstorm.md         # Requirements analysis
+├── commit.md             # Intelligent git commits
+├── create-command.md     # Command creator
+├── create-prd.md         # PRD generator
+├── generate-tasks.md     # Task breakdown
+├── process-tasks.md      # Task execution
+├── sum.md                # BLUF communication
+└── docs/                 # Generated documentation
+    ├── brainstorm/       # Brainstorming sessions
+    ├── prds/             # Product requirements
+    └── tasks/            # Task lists
 ```
 
 ## ⚡ Key Benefits
@@ -111,9 +173,11 @@ $ARGUMENTS
 
 **Start anywhere in the workflow:**
 - Got an idea? → `/brainstorm`
-- Need clarity? → `/bluf` 
+- Need clarity? → `/sum` 
 - Ready to code? → `/generate-tasks` or `/process-tasks`
 - Time to commit? → `/commit`
+- Writing content? → `/blog-post-review`
+- Need a new command? → `/create-command`
 
 **Command Chaining:**
 ```bash
@@ -123,6 +187,25 @@ $ARGUMENTS
 
 **Rich Context:**
 All commands accept detailed context for better results. Include metrics, constraints, technical stack, and specific scenarios for optimal output.
+
+## 🤝 Contributing
+
+We welcome contributions! Here's how you can help:
+
+1. **Create New Commands**: Use `/create-command` to design new expert personas
+2. **Improve Existing Commands**: Submit PRs with enhancements
+3. **Share Workflows**: Document your successful command combinations
+4. **Report Issues**: Help us improve by reporting bugs or suggesting features
+
+### Contribution Guidelines
+- Follow the existing command structure
+- Include clear documentation and examples
+- Test commands thoroughly before submitting
+- Keep the expert persona consistent and engaging
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
